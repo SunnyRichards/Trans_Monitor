@@ -1,0 +1,50 @@
+{application, trans_monitor,
+ [
+  {description, "An OTP application"},
+
+  {vsn, "0.1.0"},
+  {registered, []},
+
+  {mod, { trans_monitor_app, []}},
+
+  {applications,
+   [kernel,
+    stdlib,
+    lager,
+    crypto,
+    inets,
+    ssl,
+    mongodb,
+    eredis,
+    gen_smtp
+   ]},
+
+  {env,[
+
+   {'trans_monitor_monogo', [
+    {type, mongodb},
+    {settings, [
+     {host, "35.154.75.252"},
+     {port, 27017},
+     {database, <<"gtsnew">>}, {w_mode, safe}
+    ]}
+   ]},
+
+   {'trans_monitor_redis', [
+    {type, redis},
+    {settings, [
+     "13.127.111.209",
+     6379
+    ]}
+   ]}
+
+  ]},
+
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
+
+
