@@ -2,7 +2,7 @@
 
 ## Contacts
 
-Author - Sunny Richards  ([sunny@lynkit.in](mailto:dev@transecur.com))
+Author - Sunny Richards  ([sunny@lynkit.in](mailto:sunny@lynkit.in))
 
 Website - [https://www.transecur.com](https://www.transecur.com)
 
