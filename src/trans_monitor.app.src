@@ -24,7 +24,7 @@
    {'trans_monitor_monogo', [
     {type, mongodb},
     {settings, [
-     {host, "35.154.75.252"},
+     {host, localhost},
      {port, 27017},
      {database, <<"gtsnew">>}, {w_mode, safe}
     ]}
@@ -33,7 +33,7 @@
    {'trans_monitor_redis', [
     {type, redis},
     {settings, [
-     "13.127.111.209",
+     localhost,
      6379
     ]}
    ]}
