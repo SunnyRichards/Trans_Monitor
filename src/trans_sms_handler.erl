@@ -28,7 +28,7 @@ do_send_alert(Data) ->
   application:start(ssl),
   Msg = "List of all Inactive Devices: " ++ Data,
   Userdata = expand_params([{"method","sendMessage"},{"send_to","9810344152"},{"msg",Msg},{"msg_type","TEXT"},
-                            {"userid","2000176085"},{"auth_scheme","PLAIN"},{"password","MQ00NgZVf"},
+                            {"userid","youruserid"},{"auth_scheme","PLAIN"},{"password","yourpassword"},
                             {"mask","TRNSCR"},{"format","JSON"}]),
   Resp =  httpc:request(post,
     {"http://enterprise.smsgupshup.com/GatewayAPI/rest", [], "application/x-www-form-urlencoded", Userdata}, [], []),
