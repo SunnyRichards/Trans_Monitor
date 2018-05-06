@@ -33,7 +33,7 @@ do_send_alert([]) ->
 
 do_send_alert(Data) ->
   gen_smtp_client:send({?USERNAME,
-    ["sunny@lynkit.in","manas@lynkit.in"],
+    ["receiver@gmail.com"],
       "Subject: ALERT !!! - Devices not Responding !!! \r\nFrom: Transecur - [DevTeam] \r\nTo: Admin \r\n\r\n List of Devices: " ++  Data},
     [{relay, ?RELAY}, {username, ?USERNAME},{password, ?PASSWORD},
       {ssl, false},{tls, always},{no_mx_lookups, true},{auth, always}]).
