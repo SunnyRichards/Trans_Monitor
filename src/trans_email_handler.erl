@@ -25,7 +25,7 @@
 
 do_send_alert([]) ->
   gen_smtp_client:send({?USERNAME,
-    [receiver@gmail.com],
+    ["receiver@gmail.com"],
     "Subject: SUCCESS !!! All Devices are Responding !!! \r\nFrom: Transecur - [DevTeam] \r\nTo: Admin \r\n\r\n No device is in faulty state, all are working fine. \n Cheers"},
     [{relay, ?RELAY}, {username, ?USERNAME},{password, ?PASSWORD},
       {ssl, false},{tls, always},{no_mx_lookups, true},{auth, always}]);
