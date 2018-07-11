@@ -1,8 +1,8 @@
-# [trans_monitor GPS Tracking System](https://www.transecur.com)
+# [trans_monitor GPS Tracking System](https://github.com/SunnyRichards/trans_monitor)
 
 ## Contacts
 
-Author - Sunny Richards  ([sunny@lynkit.in](mailto:sunny@lynkit.in))
+Author - Sunny Richards  ([sunny.s@redbus.com](mailto:sunny.s@redbus.com))
 
 Website - [https://www.transecur.com](https://www.transecur.com)
 
